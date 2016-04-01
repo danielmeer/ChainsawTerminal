@@ -15,6 +15,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots:
+    void on_serialPortRefreshButton_clicked();
+    void on_serialPortConnectButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
